@@ -6,11 +6,8 @@
     let astronauta = document.querySelector(".welcome-astronaunta__lottie");
     let commet = document.querySelector(".welcome-saturn__lottie");
     let aliens = document.querySelector(".welcome-alien__lottie");
-    
+    let welcomeText = document.querySelector(".welcome-text");
     let planet_behind = document.querySelector(".welcome-backplanet__lottie");
-    // let btn = document.querySelector(".btn");
-    // let mountains_front = document.querySelector("#mountains_front");
-    // let header = document.querySelector("header");
     
     window.addEventListener("scroll", function () {
         let value = window.scrollY;
@@ -26,8 +23,6 @@
         rocket.style.marginTop = value * .8 + "px";
         rocket.style.marginLeft  = value * 2.5 + "px";
         aliens.style.marginRight = value * .2 + "px";
-
-        // btn.style.marginTop = value * 1.5 + "px";
-        // header.style.top = value * 0.5 + "px"; 
+        welcomeText.style.marginTop = value * .3 + "px";
     })
 }
